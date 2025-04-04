@@ -1,17 +1,13 @@
-#######################################
-#                                     #
-# Shallow Copy Vs Deep Copy in Python #
-#######################################
+### Shallow Copy Vs Deep Copy in Python 
 
 In Python, Assignment statements do not copy objects, they create bindings between a target and an object.
-
+```
 a = [1, 2]
-
 b = a
-
 a ===> [1, 2]  <==== b
-
+```
 ## Copy
+
 ### Shallow Copy
 
 What is Shallow Copy?
@@ -20,28 +16,25 @@ shallow copy doesn't copy objects recursively. it creates a copy of the main obj
 and if that object contains other objects. In shallow copy we use the same references of those objects instead of creating new objects for them as well.
 
 ## Shallow Copy
-
+```
 import copy
-
 ls = [1, 2, [3, 5]]
-
 ls2 = copy.copy(ls)
+```
 
 # Append 6 to ls
-
+```
 ls.append(6)
-
 print(ls)
-
 print(ls2)
+```
 
 # Append 7 to the inner list
+```
 ls[2].append(7)
-
 print(ls)
-
 print(ls2)
-
+```
 What is deep Copy?
 
 Deep Copy is a process in which the copying process occurs recursively. it means first constructing a new collection object and then
@@ -56,31 +49,23 @@ ls = [1, 2, [3, 5]]
 ls2 = copy.deepcopy()
 
 # Append 6 to ls
+```
 ls.append(6)
-
 print(ls)
-
 print(ls2)
-
+```
 
 # Append 7 to the inner list
+```
 ls[2].append(7)
-
 print(ls)
-
 print(ls2)
+```
+### what is monkey patching?
 
-################################END######################
-
-
-what is monkey patching?
-
-#######
-diff between == and is operator in python
-
-in Python, == checks for equality
-
-if we have two objects a and b, a == b checks if both a and b are equal
+diff between == and is operator in python.<br/>
+in Python, == checks for equality<br/>
+if we have two objects a and b, a == b checks if both a and b are equal<br/>
 
 __eq__ method
 
@@ -94,7 +79,7 @@ print(id(li2))
 
 values are same but object are different
 
-what does 'is' check for ?
+what does `is` check for ?
 
 In Python, the is operator check for identity.
 
@@ -106,15 +91,18 @@ Flase
 
 li2 = li1
 
-#########
-# How many ways can we use underscore in python?
-# How to declare a private variable in Python?
-# Explain about the different access modifiers in Python?
-# what is Name mangling?
+
+#### How many ways can we use underscore in python?
+
+#### How to declare a private variable in Python?
+
+#### Explain about the different access modifiers in Python?
+
+#### what is Name mangling?
 
 We are going to discuss about all these questions in details in the upcoming 3 videos.
 
-How many different ways underscores (_) are used in Python?
+How many different ways underscores `(_)` are used in Python?
 
 _: single underscore
 

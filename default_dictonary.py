@@ -1,0 +1,4 @@
+dict = dict()
+
+print(dict)
+

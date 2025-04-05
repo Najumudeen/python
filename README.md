@@ -4,7 +4,7 @@
 - [Subprocess Python Examples](subprocess_tips.py)
 - [Decorators Python Examples](python_decorators.py)
 - [Comprehension Python Examples](comprehensions_tips.py)
-- [Dictionary Python Examples](dict_tips.py)
+- [Python Datatypes Creation Examples](python_datatypes_creation.py)
 - [Check File Exist in directory Using Python](file_exist.py)
 - [How destoryed python object after created](object_deletion.py)
 - [Parse JSON Object with the help of Python](process_json_file.py)

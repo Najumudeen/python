@@ -1,13 +1,16 @@
-# #Question1:
-#
-# data = {}
-# print(type(data))
-#
-# # Set Create in Python
-#
-# data = set()
-# print(type(data))
-#
+def create_python_dictionary():
+    data = {}
+    print(type(data))
+
+def create_python_set():
+     ''' Set Create in Python '''
+     data = set()
+     print(type(data))
+
+def create_python_typle():
+     data = dict()
+     print(type(data))
+
 # # Question 2
 #
 # print(-10//3)
@@ -52,10 +55,6 @@ def pattern(arg):
                 dict[i] = 1
       return dict
 
-a = pattern("a,a,a,b,b,c,c,c")
-
-print(a)
-
 
 def splitandmergerfunc(arg):
       val = arg.split()
@@ -63,6 +62,17 @@ def splitandmergerfunc(arg):
       final_value = ' '.join(new_val)
       return final_value
 
-b = splitandmergerfunc("Sky is blue")
+def main():
+     create_python_dictionary()
+     create_python_set()
+     create_python_typle()
+     a = pattern("a,a,a,b,b,c,c,c")
+     print(a)
+     b = splitandmergerfunc("Sky is blue")
+     print(b)
 
-print(b)
+
+     
+if __name__ == "__main__":
+    main()
+    

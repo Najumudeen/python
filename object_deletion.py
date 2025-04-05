@@ -7,3 +7,4 @@ class Person:
         print("Object is being deconstructed")
 
 p = Person("Mike", 25)
+print(p)

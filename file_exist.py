@@ -1,5 +1,8 @@
 import os
 
-for filename in os.listdir("/Users/zayan/Python350"):
-    if filename.startswith("scribe.py"):
-        print(f"found {filename}")
+def file_exist(filename):
+    for file in os.listdir("."):
+        if file.startswith(filename):
+            return(f"found {filename}")
+        return -1
+print(file_exist("scribe.py"))

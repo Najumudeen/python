@@ -1,19 +1,17 @@
-# import os
-#
-# print(os.popen('whoami'))
-#
-# print(*os.popen('whoami'))
+import os
+from subprocess import Popen
+from time import time
 
-# Show from Python
 
-# ls -al
-# clear
+def os_module_tips(arg = None):
+    print(os.Popen('whoami'))
+    print(*os.Popen('whoami'))
+    print(Popen("ls -la"))
+    print(*Popen("ls"))
+    print(*Popen("pwd"))
+    print(*Popen("clear"))
 
-# from os import popen
-# print(popen("ls -la"))
-# print(*popen("ls"))
-# print(*popen("pwd"))
-# print(*popen("clear"))
+
 # #
 # # Create Three Test files
 # # Using Cat create files
@@ -85,8 +83,7 @@
 # ##
 #
 #
-from subprocess import Popen
-from time import time
+
 
 # for i in range(0,1):
 #     st = time()
@@ -110,12 +107,14 @@ from time import time
 
 # Compare 3 files and get the values
 # cal 3 > filename.txt
-root = "filename.txt"
-from subprocess import Popen
+# root = "filename.txt"
+# from subprocess import Popen
 
-print('Code:', Popen(["cal", "-3", ">", root], shell=True).wait())
+# print('Code:', Popen(["cal", "-3", ">", root], shell=True).wait())
 
-with open(root) as fh:
-    for line in fh:
-        print(line)
-        print(line[14:17], line[36:39], line[58:62])
+# with open(root) as fh:
+#     for line in fh:
+#         print(line)
+#         print(line[14:17], line[36:39], line[58:62])
+
+print(os_module_tips())

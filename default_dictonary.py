@@ -1,4 +1,0 @@
-dict = dict()
-
-print(dict)
-
